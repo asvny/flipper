@@ -1,0 +1,12 @@
+{
+  "name": "SID218153812-A2-Project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "puer"
+  },
+  "dependencies": {
+    "puer": "^2.0.0"
+  }
+}
