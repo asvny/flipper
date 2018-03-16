@@ -1,0 +1,96 @@
+:root {
+  
+  --Animation-enter: cubic-bezier(0,.5,.5,1);
+  --Animation-exit: cubic-bezier(.5,0,1,.5);
+  --Animation-move: cubic-bezier(.5,0,.5,1);
+  
+	--Color-background: #243240;
+	--Color-text: #fff;
+  
+  --Grid-size: 3;
+  --size: 0.9547169811320755;
+}
+
+html {
+  font-family:'Bangers', sans-serif, arial;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+* {
+  margin:0;
+	padding:0;
+	box-sizing: inherit;
+}
+
+button {
+  font-size: inherit;
+  background: transparent;
+  border: none;
+}
+
+#App {
+  height: 100vh;
+	width: 100vw;
+  overflow: hidden;
+  position: relative;
+	color: var(--Color-text);
+}
+
+[data-screen] {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+}
+
+[data-screen]:not(.no-animation) {
+  animation: page 0.3s var(--Animation-enter) forwards;
+}
+
+[data-screen].Home:not(.no-animation) {
+  animation: page-home 0.3s var(--Animation-enter) forwards;
+}
+
+[data-screen].About:not(.no-animation) {
+  animation: page-reverse 0.3s var(--Animation-enter) forwards;
+}
+
+
+@keyframes page {
+  0% {
+    opacity:0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes page-reverse {
+  0% {
+    opacity:0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes page-home {
+  0% {
+    opacity:0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
