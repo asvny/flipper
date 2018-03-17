@@ -2,10 +2,46 @@
 <html lang="en">
 
 <head>
-  
+    <meta charset="UTF-8">
+    <title>Flipper game</title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+
+    <!-- This is section for background styling which has moving animations -->
+    <div class="Background">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!--  The root element for the app  -->
+    <div id="App">
+        <div class="Success">
+            <div class="Success-emoji">
+                <div class="Success-emojiWrapper"> 
+                	<span>🎉</span>
+                    <span>⚡️</span>
+                    <span>🏆</span>
+                    <span>🎉</span>
+                    <span>🏅</span>
+                    <span>✨</span>
+                </div>
+            </div>
+            You have won
+            <span class="js-level"></span>
+        </div>
+
+        <div class="Notify">
+            <div>🙅</div>
+            <h1>
+                Please use Portrait mode. This game doesn't support landscape mode for phone.
+            </h1>
+        </div>
+    </div>
+
 
 </body>
 </html>
