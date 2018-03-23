@@ -1,0 +1,59 @@
+.Background {
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+    background: linear-gradient(to top,hsla(210, 28%, 20%, 0.7),hsl(210, 28%, 20%));
+}
+
+.Background span {
+    height: 400px;
+    width: 150%;
+    left: -100px;
+    opacity: 0.13;
+    display: block;
+    bottom: -200px;
+    position: absolute;
+    mix-blend-mode: multiply;
+    border-radius: 80%;
+}
+
+.Background span:nth-child(1) {
+    background:hsla(211, 17%, 29%, 0.75);
+    transform:  rotate(4deg) skew(10deg);
+    animation: move-1 3s 0.1s linear infinite alternate;
+}
+
+.Background span:nth-child(2) {
+    background: hsla(210, 12%, 37%, 0.45);
+    transform:  rotate(12deg) skew(4deg);
+    animation: move-2 5s 0.3s linear infinite alternate;
+}
+
+.Background span:nth-child(3) {
+    background: hsla(211, 26%, 21%, 0.65);
+    transform:  rotate(20deg) skew(-7deg);
+    animation: move-3 4s 0.4s linear infinite alternate;
+}
+
+
+@keyframes move-1 {
+    0% {
+        transform:rotate(15deg)
+    }
+}
+
+@keyframes move-2 {
+    0% {
+        transform:rotate(-4deg)
+    }
+}
+
+@keyframes move-3 {
+    0% {
+        transform:rotate(-20deg)
+    }
+}

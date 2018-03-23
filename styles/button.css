@@ -1,0 +1,25 @@
+.Button {
+    background: transparent;
+    border: 2px solid hsla(0, 0%, 100%, 0.2);
+    color: #c4d7ea;
+    font-size: 25px;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    outline: none;
+    transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.Button:hover {
+    background: #c4d7ea;
+    color: #505862;
+    cursor: pointer;
+}
+
+.Button:active {
+    transform: scale(0.9);
+    background: #c4d8ea;
+    color: #4f5860;
+}
+
