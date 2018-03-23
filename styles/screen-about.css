@@ -1,0 +1,40 @@
+.About h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: #f2c40e;
+}
+
+.About {
+    padding-top: 6rem;
+}
+
+.About p {
+    padding: 1rem 2rem;
+    font-family: system-ui;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.About-or {
+    display: block;
+    font-family: system-ui;
+    text-align: center;
+    opacity: 0.75;
+}
+
+.About-homeBtn {
+    color: #fff;
+    display: table;
+    margin: 2rem auto;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #cbd2da;
+}
+
+
+@media screen and (min-width:720px) {
+   .About p{ 
+        max-width: 75%;
+        margin:0 auto;
+   } 
+}
