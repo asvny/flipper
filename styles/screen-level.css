@@ -1,0 +1,117 @@
+.Level {
+  padding-top: 6rem;
+}
+
+.Level-heading {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.Level-gameGrid {
+  padding:0;
+  margin: 2rem auto;
+  list-style: none;
+
+  display: grid;
+  justify-content: center;
+  grid-template-rows:  repeat(var(--Grid-size), calc(calc(100vw - 150px) / 5));
+  grid-template-columns:  repeat(var(--Grid-size), calc(calc(100vw - 150px) / 5));
+  grid-gap: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .Level-gameGrid {
+    grid-template-rows: repeat(var(--Grid-size), calc(calc(100vw - 350px) / 5));
+    grid-template-columns: repeat(var(--Grid-size), calc(calc(100vw - 350px) / 5));
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Level-gameGrid {
+    grid-template-rows: repeat(var(--Grid-size), calc(calc(100vw - 550px) / 5));
+    grid-template-columns: repeat(var(--Grid-size), calc(calc(100vw - 550px) / 5));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Level-gameGrid {
+    grid-template-rows: repeat(var(--Grid-size), calc(calc(100vw - 750px) / 5));
+    grid-template-columns: repeat(var(--Grid-size), calc(calc(100vw - 750px) / 5));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Level-gameGrid {
+    grid-template-rows: repeat(var(--Grid-size), calc(calc(100vw - 950px) / 5));
+    grid-template-columns: repeat(var(--Grid-size), calc(calc(100vw - 950px) / 5));
+  }
+}
+
+.Level-gameGrid > li {
+    background: #5d6e7e;
+    border-radius: 4px;
+}
+
+.Level-gameGrid > li.active {
+	background: #f2c40e;
+  box-shadow: 0 0px 10px #f2c40e;
+}
+
+
+.Level-nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding: 16px 0;
+    background: #3b4753;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+}
+
+
+.Level-nav > * {
+    flex: 1;
+    color: inherit;
+    font-family: inherit;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.Level-score.Level-score {
+   position: relative;
+   color: #293644;
+   font-size: 16px;
+}
+
+.Level-score span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    font-size: 36px;
+    top: -28px;
+}
+
+.Level-score i {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -14px;
+    font-size: 12px;
+    font-family: system-ui;
+    font-style: normal;
+    letter-spacing: 0;
+}
+
+.Level-score:before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 50%;
+    bottom: -50px;
+    margin-left: -50px;
+    background: #ffd63a;
+    border-radius: 50px;
+    z-index: -1;
+}
