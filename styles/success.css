@@ -1,0 +1,65 @@
+.Success {
+    background: #41c55a;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    flex-direction: column;
+    text-align: center;
+    transform: scale(0.2) translateY(110%);
+    transform-origin: bottom;
+    transition: all 0.2s cubic-bezier(0,.5,.5,1);
+}
+
+.Success.show {
+    transform: scale(1);  
+}
+
+.Success span {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 60px;
+    color: #4a3bce;
+    letter-spacing: 2px
+}
+
+.Success-emoji {
+    width: 100%;
+    position: absolute;
+    height: 90px;
+    top: 7rem;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.Success-emojiWrapper {
+    animation: scroll 1.5s cubic-bezier(.5,0,.5,1) infinite alternate forwards;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateY(0px);
+    }
+    
+    20% {
+       transform: translateY(-90px); 
+    }
+    40% {
+       transform: translateY(-180px); 
+    }
+    60% {
+       transform: translateY(-270px); 
+    }
+    80% {
+       transform: translateY(-360px); 
+    }
+    100% {
+       transform: translateY(-450px); 
+    }
+}
