@@ -80,6 +80,36 @@ Flipper.Templates = {
     );
   },
 
+  // UI for displaying the high scores
+  viewScores(model) {
+    let { scores } = model;
+    let li = [];
+
+    // If no scores, display a fallback message 
+    if (Object.keys(scores).length === 0) {
+      return D.div(
+        { "data-screen": "viewScores", class: "ViewScores" },
+        D.h1({}, "High Scores"),
+        D.h3({}, "No high scores. Go play and be the first one !"),
+        D.button({ class: "SelectLevel-homeBtn js-home" }, "Go home")
+      );
+    }
+
+    // Build li for each level from the model state
+    for (let key of Object.keys(scores)) {
+      let level = key.match(/level-([0-9]+)/)[1];
+
+      li.push(D.li({}, D.h2({}, "Level " + level), D.span({}, scores[key])));
+    }
+
+    return D.div(
+      { "data-screen": "viewScores", class: "ViewScores" },
+      D.h1({}, "High Scores"),
+      D.p({},"(Based on the number of moves)"),
+      D.ul({}, ...li),
+      D.button({ class: "SelectLevel-homeBtn js-home" }, "Go home")
+    );
+  }
 };
 
 
