@@ -20,3 +20,29 @@
 ## 17 April
 
  - Add game config levels to data/config.js
+
+## 18 April
+
+ - Implement prototype of Level 1 game
+
+## 20 April
+
+ - Add game event handlers and logic required for the functionality of the game
+
+## 21 April
+
+ - Render level screen and test basic functionality of the game
+
+## 22 April
+
+ - Add temporary score gained based on the moves and update in the UI.
+
+## 24 April
+
+ - Refactor the javascript code which updates the score.
+
+## 25 April
+
+ - Refactor the code which flips the lights based on clicks
+
+
