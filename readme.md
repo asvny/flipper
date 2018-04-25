@@ -6,3 +6,13 @@
 
 The game starts with a random number of grids of lights, in which certain lights are switched ON. On pressing a grid, the pressed grid is flipped to either ON or OFF based on the current state and the bordering grids are also toggled depending on the current state of the grid. The aim of this game to turn off all the lights and finish it preferably with fewer moves or in a short span of time based on the difficulty. To keep the number of moves minimal, there are certain things to be kept in your mind, on pressing the same grid even number of times leaves the game in the same state.
 
+# Features
+
+- The app  has about 20 levels to squeeze your brain for solutions !.
+- The app calculates the best score on the minimum number of moves taken to complete the level.
+- Interactive UI with animations.
+- The app allows the user to play any level randomly.
+- The app keeps track of each screen with location hash.
+- The difficulty increases as the level number increases.
+- Handles all possible error states.
+
