@@ -16,3 +16,8 @@ The game starts with a random number of grids of lights, in which certain lights
 - The difficulty increases as the level number increases.
 - Handles all possible error states.
 
+# Code
+
+The code flows **MVC** pattern. The app uses a namespace named ** Flipper** which has the views, model and controller.
+There is a additional section **template** which holds the DOM structure required for each screen.
+
