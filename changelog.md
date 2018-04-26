@@ -45,4 +45,11 @@
 
  - Refactor the code which flips the lights based on clicks
 
+## 26 April
+
+ - Improvise the css code which uses vmin units
+
+## 28 April
+
+ - Navigate to next level when user finishes a level and also increment the score
 
