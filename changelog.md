@@ -53,3 +53,21 @@
 
  - Navigate to next level when user finishes a level and also increment the score
 
+## 30 April
+
+ - Add events to back button
+
+## 1 May
+ - Write whole event functionality for the app
+
+## 2 May
+ - Handle UI for all levels of various grid scenes
+
+## 4 May
+ - Updates UI information like level and score on the screen
+
+## 5 May
+ - Rewite the flip function logic to handle all grid sizes
+
+## 6 May
+ - Refactor the grid layout using the new CSS grid property and CSS variables
