@@ -21,3 +21,26 @@ The game starts with a random number of grids of lights, in which certain lights
 The code flows **MVC** pattern. The app uses a namespace named ** Flipper** which has the views, model and controller.
 There is a additional section **template** which holds the DOM structure required for each screen.
 
+## Controller
+
+Responsible for the connecting model and view
+
+## Templates
+
+It has the DOM structure for the all the screens built using the DOM builder
+
+## Model
+
+It has the whole state of the app in a single object. It has complex objects and arrays nested within each other.
+
+## View
+
+It is responsible for click handlers and changes the model state based on the gameplay and navigates the user to appropriate screen
+
+## Utils
+
+Simple reusuable functionality for the app
+
+# Author
+
+Annamalai
