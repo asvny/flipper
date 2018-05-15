@@ -1,6 +1,13 @@
 Flipper.Controller = {};
 
-
+/**
+  The controller is reponsible for showing/hiding screen states and acts as an interconnector
+  which connects the view and the model
+  The function is called each time when ever the hash is changed
+  The major functionalities
+    - Hide/Show the current screen based on hash
+    - Set the grid cells count as CSS variable for each level
+*/
 Flipper.Controller.handleEvent = (hash = Flipper.Model.currentHash) => {
   let screen = hash.slice(1);
   // Extract the level number from hash
