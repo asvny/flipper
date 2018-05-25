@@ -71,3 +71,24 @@
 
 ## 6 May
  - Refactor the grid layout using the new CSS grid property and CSS variables
+
+## 8 May
+ -  Learnned CSS Animations and added a notification message when a level is won
+
+## 11 May
+ - Enhance the UI of the game by adding box-shadows and animate them when a user clicks
+
+## 13 May
+ - Fix a bug in the **flip** function due to which the lights were randomly flipped
+
+## 14 May
+ - Add a minor delay when a level is won to know that a level is finished.
+
+## 15 May
+ - Add the main screen which lists all the menu and UI animations for the whole app.
+
+## 16 May
+ - Added high score view and functionality to the app and change UI based on media queries.
+
+## 17 May
+ - Handle the error states and also orientation states and fix minor UI bugs

@@ -43,4 +43,4 @@ Simple reusuable functionality for the app
 
 # Author
 
-Annamalai
+Annamalai Saravanan
